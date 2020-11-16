@@ -58,6 +58,11 @@
                 text-transform: uppercase;
             }
 
+            .links {
+                position: absolute;
+                top:0%;
+                left: 0%;
+            }
             .m-b-md {
                 margin-bottom: 30px;
             }
@@ -84,15 +89,12 @@
                     Strat-V
                 </div>
 
-                {{-- <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div> --}}
+                <div class="links">
+                    <a href={{route('file')}}>File</a>
+                    <a href={{route('graph')}}>Graphs</a>
+                    <a href={{route('table')}}>Tables</a>
+                    <a href={{route('calculator')}}>Calculator</a>
+                </div>
             </div>
         </div>
     </body>
