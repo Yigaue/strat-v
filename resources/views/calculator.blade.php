@@ -50,6 +50,7 @@
                 font-family:'Courier New', Courier, monospace;
                 font-weight: bold;
                 font-size: 20px;
+                margin-top: 30px;
             }
 
             .value-arrow {
@@ -73,74 +74,59 @@
     <body>
         <div class="container">
             <main class="row">
-                <section class="data-input col-md-4">
+                {{-- <section class="data-input col-md-4">
                     <div class="form-group">
-                        {{-- <label> Length of Bed</label> --}}
                         <input type="number" min="0" placeholder="Length of Bed"/>
                     </div>
                     <div class="form-group">
-                        {{-- <label> Width of Bed </label> --}}
                         <input type="number" min="0" placeholder="Width of Bed"/>
                     </div>
                     <div class="form-group">
-                        {{-- <label> Oil viscosity</label> --}}
                         <input type="number" min="0" placeholder="Oil viscosity"/>
                     </div>
                     <div class="form-group">
-                        {{-- <label> Water Viscosity</label> --}}
                         <input type="number" min="0" placeholder="Water Viscosity"/>
                     </div>
                     <div class="form-group">
-                        {{-- <label> Average Posrosity</label> --}}
                         <input type="number" min="0" placeholder="Average Posrosity"/>
                     </div>
                     <div class="form-group">
-                        {{-- <label> Oil Formation volume factor</label> --}}
                         <input type="number" min="0" placeholder="Oil Formation volume factor"/>
                     </div>
                     <div class="form-group">
-                        {{-- <label> Water Formation volume factor</label> --}}
                         <input type="number" min="0" placeholder="Water Formation volume factor"/>
                     </div>
                     <div class="form-group">
-                        {{-- <label> initial Water Saturation</label> --}}
                         <input type="number" min="0" placeholder="Initial Water Saturation"/>
                     </div>
                 </section>
                 <section class="input col-md-4">
                     <div class="form-group">
-                        {{-- <label> Initail Gas Saturation</label> --}}
                         <input type="number" min="0" placeholder="Initail Gas Saturation"/>
                     </div>
                     <div class="form-group">
-                        {{-- <label> Initial Oil Saturation</label> --}}
                         <input type="number" min="0" placeholder="Initial Oil Saturation"/>
                     </div>
                     <div class="form-group">
-                        {{-- <label> Residual Oil Saturation</label> --}}
                         <input type="number" min="0" placeholder="Residual Oil Saturation"/>
                     </div>
                     <div class="form-group">
-                        {{-- <label> Constan Injection Rate</label> --}}
                         <input type="number" min="0" placeholder="Constan Injection Rate"/>
                     </div>
                     <div class="form-group">
-                        {{-- <label> Injection Pressure Differential</label> --}}
                         <input type="number" min="0" placeholder="Injection Pressure Differential"/>
                     </div>
                     <div class="form-group">
-                        {{-- <label> Residual Gas Saturarion of Unswept Zone</label> --}}
                         <input type="number" min="0" placeholder="Residual Gas Saturarion of Unswept Zone"/>
                     </div>
                     <div class="form-group">
-                        {{-- <label> Residual Gas Saturarion of swept Zone</label> --}}
                         <input type="number" min="0" placeholder="Residual Gas Saturarion of swept Zone"/>
                     </div>
                     <div class="form-group">
-                        {{-- <label> Residual Gas Saturarion</label> --}}
                         <input type="number" min="0" placeholder="Residual Gas Saturarion"/>
                     </div>
-                </section>
+                </section> --}}
+
                 <section class="section col-md-2">
                     <div class="screen">
                         <div class="display">

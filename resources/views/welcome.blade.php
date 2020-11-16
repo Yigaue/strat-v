@@ -69,33 +69,16 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Strat-V
-                </div>
-
-                <div class="links">
-                    <a href={{route('file')}}>File</a>
-                    <a href={{route('graph')}}>Graphs</a>
-                    <a href={{route('table')}}>Tables</a>
-                    <a href={{route('calculator')}}>Calculator</a>
-                </div>
+        <div id="app">
+            <router-view></router-view>
+            <div class="links">
+                <router-link to="/">Home</router-link>
+                <router-link :to="{name: 'Calculate'}">Calculator</router-link>
+                <a href="">File</a>
+                <a href="">Graphs</a>
+                <a href="">Tables</a>
             </div>
         </div>
+        <script src="/js/app.js"></script>
     </body>
 </html>

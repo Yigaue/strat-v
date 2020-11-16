@@ -13,23 +13,23 @@
 
 use App\Http\Controllers\PermeabilityRatio;
 
-Route::get('/', function () {
+Route::get('/{any?}', function () {
     return view('welcome');
 });
 
-Route::get('/calculate', 'PermeabilityRatio@calculate');
+// Route::get('/calculate', 'PermeabilityRatio@calculate');
 
-Route::get('/file', function() {
-    return 'File coming soon';
-})->name('file');
+// Route::get('/file', function() {
+//     return 'File coming soon';
+// })->name('file');
 
-Route::get('/calculator', function() {
-    return view('calculator');
-})->name('calculator');
+// Route::get('/calculator', function() {
+//     return view('calculator');
+// })->name('calculator');
 
-Route::get('/table', function() {
-    return 'table coming also';
-})->name('table');
+// Route::get('/table', function() {
+//     return 'table coming also';
+// })->name('table');
 
 Route::get('/graph', function() {
     return 'graphs coming soon';
